@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h2>Protected Page</h2>
+        <p> Spend a few minutes focusing on your breath, noticing how it feels to inhale and exhale, and let go of any distractions.</p>
+        <a href="{% url 'home' %}">Go Back</a>
+    </div>
+</body>
+</html>
